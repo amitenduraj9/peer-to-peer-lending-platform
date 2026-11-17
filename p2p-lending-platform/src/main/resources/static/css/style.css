@@ -1,0 +1,92 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+body {
+    background: #EEF3FC;
+    color: #1B1B2F;
+}
+
+.navbar {
+    background: #1E2761;
+    color: #fff;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 { font-size: 18px; }
+
+.navbar a {
+    color: #CADCFC;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 10px rgba(30,39,97,0.08);
+}
+
+.card h3 { color: #1E2761; margin-bottom: 14px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #E2E8F5; font-size: 14px; }
+th { color: #3E5C9A; text-transform: uppercase; font-size: 12px; }
+
+.badge {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 12px; font-weight: bold; color: #fff;
+}
+.badge-PENDING { background: #E5A94D; }
+.badge-APPROVED { background: #3E5C9A; }
+.badge-FUNDED { background: #2C8F5A; }
+.badge-REJECTED { background: #C0392B; }
+.badge-CLOSED { background: #6B7280; }
+.badge-PAID { background: #2C8F5A; }
+
+form.inline { display: inline; }
+
+input, select, button {
+    padding: 10px; margin: 6px 0; border-radius: 6px; border: 1px solid #C7D3EC;
+    font-size: 14px; width: 100%;
+}
+
+button {
+    background: #1E2761; color: #fff; border: none; cursor: pointer; font-weight: bold;
+    width: auto; padding: 10px 22px;
+}
+button:hover { background: #3E5C9A; }
+
+button.reject { background: #C0392B; }
+button.reject:hover { background: #922B21; }
+
+.auth-box {
+    max-width: 380px; margin: 60px auto; background: #fff; padding: 34px;
+    border-radius: 12px; box-shadow: 0 4px 20px rgba(30,39,97,0.12);
+}
+.auth-box h2 { color: #1E2761; margin-bottom: 18px; text-align: center; }
+
+.error { color: #C0392B; margin-bottom: 12px; font-size: 13px; }
+.success { color: #2C8F5A; margin-bottom: 12px; font-size: 13px; }
+
+.stat-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 22px;
+}
+.stat-box {
+    background: #1E2761; color: #fff; padding: 20px; border-radius: 10px; text-align: center;
+}
+.stat-box .num { font-size: 26px; font-weight: bold; }
+.stat-box .label { font-size: 12px; color: #CADCFC; margin-top: 4px; }
+
+.small-link { text-align: center; margin-top: 14px; font-size: 13px; }
+.small-link a { color: #3E5C9A; }
